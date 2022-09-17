@@ -1,4 +1,4 @@
-module github.com/hakluke/hakrawler
+module github.com/d0nest/extractor
 
 go 1.16
 
