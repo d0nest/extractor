@@ -258,7 +258,9 @@ func printResult(link string, sourceName string, showSource bool, showJson bool,
 				return
 			}
 		}()
-		results <- result
+		if strings.Contains(result, "s3.amazonaws"){
+			results <- result
+		}
 	}
 }
 
